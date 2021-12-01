@@ -8,7 +8,7 @@ struct Node{
 };
 
 struct Node* newNode(int data){
-    struct Node* p = (struct Node*)malloc(sizeof(int));
+    struct Node* p = (struct Node*)malloc(sizeof(struct Node));
     p->data = data;
     p->prev = NULL;
     p->next = NULL;
